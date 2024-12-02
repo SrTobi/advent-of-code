@@ -27,3 +27,6 @@ object Coords:
   def grid(width: Int, height: Int): Iterator[Coords] =
     for (x <- (0 until width).iterator; y <- 0 until height)
       yield (x, y)
+
+extension [T](seq: Seq[T])
+  def remove(idx: Int): Seq[T] = seq.take(idx) ++ seq.drop(idx + 1)
