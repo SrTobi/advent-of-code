@@ -1,5 +1,5 @@
 package com.github.srtobi
-package day3
+package aoc2023.day3
 
 import com.github.srtobi
 
@@ -60,7 +60,7 @@ object Game {
 
 @main
 def task1(): Unit =
-  val game = Game.fromLines(readData("assets/day3/task1").linesIterator)
+  val game = Game.fromLines(readData("assets/2023/day3/task1").linesIterator)
   println(game)
   println(game.coords.toSeq)
   val fields =
@@ -76,7 +76,7 @@ def task1(): Unit =
 
 @main
 def task2(): Unit =
-  val game = Game.fromLines(readData("assets/day3/task2").linesIterator)
+  val game = Game.fromLines(readData("assets/2023/day3/task2").linesIterator)
 
   val fields =
     for

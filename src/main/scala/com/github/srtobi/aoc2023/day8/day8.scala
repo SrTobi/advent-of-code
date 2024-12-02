@@ -1,5 +1,5 @@
 package com.github.srtobi
-package day8
+package aoc2023.day8
 
 import scala.annotation.tailrec
 import scala.collection.immutable.ArraySeq
@@ -29,7 +29,7 @@ object Node:
 
 @main
 def day8_task1(): Unit =
-  val Seq(instructionsTxt, _, rest: _*) = readData("assets/day8/task1").trim.linesIterator.toSeq
+  val Seq(instructionsTxt, _, rest*) = readData("assets/2023/day8/task1").trim.linesIterator.toSeq
 
   val instructions = instructionsTxt.map(Instruction.fromChar)
   println(instructions)
@@ -51,7 +51,7 @@ def day8_task1(): Unit =
 
 @main
 def day8_task2(): Unit =
-  val Seq(instructionsTxt, _, rest: _*) = readData("assets/day8/task1").trim.linesIterator.toSeq
+  val Seq(instructionsTxt, _, rest: _*) = readData("assets/2023/day8/task1").trim.linesIterator.toSeq
 
   val instructions = instructionsTxt.map(Instruction.fromChar).to(ArraySeq)
   println(instructions)

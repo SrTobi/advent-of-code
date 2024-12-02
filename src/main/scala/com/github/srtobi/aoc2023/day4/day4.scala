@@ -1,5 +1,5 @@
 package com.github.srtobi
-package day4
+package aoc2023.day4
 
 import scala.collection.immutable.ArraySeq
 import scala.collection.mutable
@@ -27,7 +27,7 @@ object Card:
 
 @main
 def day4_task1(): Unit =
-  val data = readData("assets/day4/task1")
+  val data = readData("assets/2023/day4/task1")
   val cards = data.linesIterator.map(Card.fromString).toSeq
   println(cards.mkString("\n"))
   println(cards.map(_.worth).sum)
@@ -35,7 +35,7 @@ def day4_task1(): Unit =
 
 @main
 def day4_task2(): Unit =
-  val data = readData("assets/day4/task2")
+  val data = readData("assets/2023/day4/task2")
   val cards = data.linesIterator.map(Card.fromString).to(ArraySeq)
   println(cards.map(c => s"$c -> ${c.worth}").mkString("\n"))
   val startMap = Map.from(cards.indices.map(_ -> 1))

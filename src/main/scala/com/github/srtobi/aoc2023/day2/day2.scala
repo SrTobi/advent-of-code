@@ -1,6 +1,6 @@
-package com.github.srtobi.day2
+package com.github.srtobi.aoc2023.day2
 
-import com.github.srtobi.day3.Game
+import com.github.srtobi.aoc2023.day3.Game
 import com.github.srtobi.readData
 
 import scala.io.Source
@@ -45,7 +45,7 @@ def day2_1(): Unit =
     "blue" -> 14
   )
 
-  val games = readData("assets/day2/task1")
+  val games = readData("assets/2023/day2/task1")
     .linesIterator
     .map(Game.fromString)
     .toSeq
@@ -61,7 +61,7 @@ def day2_1(): Unit =
 
 @main
 def day2_2(): Unit =
-  val games = readData("assets/day2/task2")
+  val games = readData("assets/2023/day2/task2")
     .linesIterator
     .map(Game.fromString)
     .toSeq

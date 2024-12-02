@@ -1,5 +1,5 @@
 package com.github.srtobi
-package day5
+package aoc2023.day5
 
 import scala.annotation.tailrec
 
@@ -58,7 +58,7 @@ def cut(lines: Seq[String]): Seq[Seq[String]] =
 
 @main
 def day5_task1(): Unit =
-  val data = readData("assets/day5/task1").linesIterator.toSeq
+  val data = readData("assets/2023/day5/task1").linesIterator.toSeq
 
   val seeds = data.head.stripPrefix("seeds: ").split(' ').map(_.toLong).toSeq
 
@@ -106,7 +106,7 @@ object SeedRange:
 
 @main
 def day5_task2(): Unit =
-  val data = readData("assets/day5/task1").linesIterator.toSeq
+  val data = readData("assets/2023/day5/task1").linesIterator.toSeq
 
   val seeds = data.head.stripPrefix("seeds: ").split(' ')
     .sliding(2, 2)

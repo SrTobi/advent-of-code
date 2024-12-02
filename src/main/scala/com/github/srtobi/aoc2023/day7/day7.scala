@@ -1,7 +1,7 @@
 package com.github.srtobi
-package day7
+package aoc2023.day7
 
-import com.github.srtobi.day7.HandRank._
+import HandRank._
 
 enum HandRank:
   case FiveOfAKind
@@ -77,7 +77,7 @@ object Hand:
 @main
 def day7_task1(): Unit =
   assert(Hand.cards('J') == 11)
-  val handToBet = readData("assets/day7/task1").trim
+  val handToBet = readData("assets/2023/day7/task1").trim
     .linesIterator
     .toSeq
     .map:
@@ -93,7 +93,7 @@ def day7_task1(): Unit =
 @main
 def day7_task2(): Unit =
   assert(Hand.cards('J') == 1)
-  val handToBet = readData("assets/day7/task1").trim
+  val handToBet = readData("assets/2023/day7/task1").trim
     .linesIterator
     .toSeq
     .map:

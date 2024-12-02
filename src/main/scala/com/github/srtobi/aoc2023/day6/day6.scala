@@ -1,6 +1,5 @@
 package com.github.srtobi
-package day6
-
+package aoc2023.day6
 
 case class Race(time: Long, dist: Long):
   def minMax: (Double, Double) =
@@ -20,7 +19,7 @@ case class Race(time: Long, dist: Long):
 
 @main
 def day6_task1(): Unit =
-  val Seq(timeS, distS) = readData("assets/day6/task1").trim.linesIterator.toSeq
+  val Seq(timeS, distS) = readData("assets/2023/day6/task1").trim.linesIterator.toSeq
 
   val times = timeS.stripPrefix("Time:").split(raw"\s+").filterNot(_.isBlank).map(_.toInt)
   val dists = distS.stripPrefix("Distance:").split(raw"\s+").filterNot(_.isBlank).map(_.toInt)

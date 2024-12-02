@@ -1,5 +1,4 @@
-package com.github.srtobi
-
+package com.github.srtobi.aoc2023.day1
 
 val input =
   """
