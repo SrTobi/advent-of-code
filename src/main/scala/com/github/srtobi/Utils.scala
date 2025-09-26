@@ -30,3 +30,17 @@ object Coords:
 
 extension [T](seq: Seq[T])
   def remove(idx: Int): Seq[T] = seq.take(idx) ++ seq.drop(idx + 1)
+  def intersperse[TT >: T](elem: TT): Seq[TT] = {
+    if (seq.isEmpty)
+      return seq
+
+    val it = seq.iterator
+    val result = Seq.newBuilder[TT]
+
+    while (true) {
+      result += it.next()
+      if (!it.hasNext) return result.result()
+      result += elem
+    }
+    ???
+  }
